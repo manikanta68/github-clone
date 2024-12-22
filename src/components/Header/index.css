@@ -1,0 +1,131 @@
+.responsive-navbar-container {
+    display: flex;
+    flex-direction: column;
+    background-color: blue;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: white;
+    color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 1px 3px 8px #ddd;
+}
+select{
+    width: 100%;
+    border: solid 1px #ddd;
+    padding: 5px;
+    background-color: transparent;
+    outline: none;
+}
+.navbar .logo-container {
+    font-size: 1rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.hamburger .line {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 4px 0;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-links li {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.nav-links li:hover {
+    color: white;
+    background-color:  rgb(49, 49, 240)
+}
+
+.sidebar {
+    display: none;
+    background-color: white;
+    color: black;
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 1rem;
+    box-shadow: 1px 2px 8px #ddd;
+}
+.sidebar .logo-container {
+    font-size: 1rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+
+.sidebar .nav-links {
+    flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: white;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    .sidebar {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .navbar {
+        display: none;
+    }
+
+    .sidebar {
+        display: block;
+    }
+}
+.active-tab{
+    background-color: blue;
+    color: white;
+}
+  

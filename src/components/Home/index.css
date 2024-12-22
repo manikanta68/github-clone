@@ -1,0 +1,119 @@
+.home-container{
+    height: 100vh;
+    background-color: white;
+}
+
+main{
+    height: 100vh;
+    padding-top: 60px;
+    background-color: #FAFAFA;
+    
+}
+@media screen and (min-width:768px) {
+   main{
+    padding-top: 10px;
+    padding-left: 260px;
+   } 
+}
+@media screen and (min-width: 768px) {
+    .main-child{
+        border: solid 1px #ddd;
+        margin: 15px;
+        border-radius: 5px;
+        background-color: white;
+    }
+    
+}
+.respo-filter-buttons{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 3px;
+    border: solid 0.3px #ddd;
+    outline: none;
+    gap: 5px;
+    background-color: transparent;
+}
+.repos-filter-container{
+    padding: 10px;
+}
+.add-icon{
+    
+}
+.repos-buttons-container{
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+.repos-container-filters-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.repo-search-bar{
+    display: flex;
+    align-items: center;
+    border: solid 1px #ddd;
+    gap: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 10px;
+    box-shadow: 1px 2px 3px #ddd;
+}
+.repo-search-input{
+    border: none;
+    outline: none;
+}
+.repos-container-ul{
+    margin-top: 20px;
+    list-style-type: none;
+    overflow-y: scroll;
+    height: 100vh;
+}
+.repos-li{
+  border-bottom: 0.4px solid #c2bebe; /* Adjust the color and width as needed */
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  padding: 10px;
+}
+.repo-name-visibility{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 9px;
+}
+.repo-name{
+    font-size: 19px;
+    font-family: sans-serif;
+}
+.repo-visibility{
+    border: solid 0.1px #cfcdcd;
+    padding: 4px;
+    border-radius: 15px;
+    color: #175CD3;
+    font-size: 14px;
+    background-color: #B2DDFF;
+}
+.circle {
+    width: 10px;        
+    height: 10px;     
+    background-color: #3c64e7; 
+    border-radius: 50%; 
+  }
+.repo-child-names{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+.language-used{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+.button-with-color{
+    background-color: blue;
+    color: white;
+}
